@@ -14,11 +14,11 @@
 ActiveRecord::Schema.define(version: 20150427075637) do
 
   create_table "listings", force: :cascade do |t|
-    t.string   "type"
+    t.string   "house_type"
     t.string   "location"
-    t.string   "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "contact_infor"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

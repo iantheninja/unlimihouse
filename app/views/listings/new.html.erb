@@ -1,2 +1,6 @@
-<h1>Listings#new</h1>
-<p>Find me in app/views/listings/new.html.erb</p>
+<%= simple_form_for @listing do |form| %>
+  <%= form.input :house_type, label: "House type" %>
+  <%= form.input :location, label: "Location" %>
+  <%= form.input :contact_infor, label: "Management contact" %>
+  <%= form.button :submit %>
+<% end %>

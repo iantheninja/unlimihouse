@@ -1,9 +1,9 @@
 class CreateListings < ActiveRecord::Migration
   def change
     create_table :listings do |t|
-      t.string :type
+      t.string :house_type
       t.string :location
-      t.string :url
+      t.string :contact_infor
 
       t.timestamps null: false
     end

@@ -1,2 +1,8 @@
-<h1>Listings#index</h1>
-<p>Find me in app/views/listings/index.html.erb</p>
+<h1>Property Listings</h1>
+<% @listings.each do |listing| %>
+  <div class="listing">
+    <h2><%= link_to listing.house_type, listing.contact_infor %></h2>
+    <p><%= listing.location %>
+  </div>
+<% end %>
+<p><%= link_to "Add Property Listing", new_listing_path %></p>
